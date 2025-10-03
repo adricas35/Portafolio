@@ -1,5 +1,3 @@
-
-
 /* 1. TIPOGRAFÍAS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monda:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Port+Lligat+Slab&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monda:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
@@ -14,10 +12,9 @@
 /* 3. ESTILOS GENERALES */
 h1,
 h2,
-h3
-{
+h3 {
     font-family: "Rokkitt", serif;
-  
+
 }
 
 p,
@@ -30,26 +27,26 @@ select,
 textarea,
 span {
     font-family: "Philosopher", sans-serif;
-} 
+}
 
-nav a{
+nav a {
     font-family: "Port Lligat Slab", serif;
 }
 
 /* 4. VARIABLES */
- :root {
+:root {
     --primary-color: #fffd98;
     --blue-color: #66d7d1;
     --white-color: #fff;
     --purple-color: #403d58;
     --dark-color: #1F282F;
-    --orange-color: #fc7753 ;
+    --orange-color: #fc7753;
     --claro-color: #f2efea;
     --fs-title1: 80px;
     --fs-title2: 38px;
     --fs-title3: 22px;
     --fs-text: 16px;
-} 
+}
 
 
 
@@ -60,9 +57,10 @@ header {
     height: 75px;
     background: var(--dark-color);
     top: 0px;
+    z-index: 1001;
 }
 
-header nav{
+header nav {
     width: 100%;
     height: 100%;
     color: var(--claro-color);
@@ -73,7 +71,7 @@ header nav{
     font-size: 23px;
 }
 
-#navbarNav{
+#navbarNav {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -87,8 +85,8 @@ header nav{
 }
 
 
-body{
-    background: var(--dark-color)!important;
+body {
+    background: var(--dark-color) !important;
 }
 
 
@@ -99,28 +97,28 @@ body{
     padding: 0px;
 }
 
-#navbarNav li a:hover{
-    color:var(--blue-color);
+#navbarNav li a:hover {
+    color: var(--blue-color);
 }
 
-.hero{
+.hero {
     margin-top: 60px;
 }
 
-.hero .info{
+.hero .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: -webkit-fill-available;
 }
 
-.hero .info h1{
+.hero .info h1 {
     color: var(--claro-color);
     font-size: 54px;
     margin: 0px;
 }
 
-.hero .info p{
+.hero .info p {
     color: var(--claro-color);
     margin: 60px 0px 0px 0px;
     font-size: 20px;
@@ -131,25 +129,26 @@ body{
     justify-content: flex-end;
 
 }
-.hero .img img{
+
+.hero .img img {
     width: 90%;
 }
 
-footer{
+footer {
     margin: 0px !important;
     padding: 0px;
     width: 100% !important;
     max-width: 100% !important;
 }
 
-.footer{
+.footer {
     background-image: url("/img/Rectangle.png");
     background-repeat: no-repeat;
     margin-top: 60px;
     background-position: bottom;
 }
 
-.footer .icons{
+.footer .icons {
     color: var(--claro-color);
     display: flex;
     flex-direction: row;
@@ -158,22 +157,69 @@ footer{
     gap: 70px;
 }
 
-.footer .icons a{
+.footer .icons a {
     text-decoration: none;
     color: var(--claro-color);
 }
 
-.footer .icons a:hover{
-    color:var(--blue-color);
+.footer .icons a:hover {
+    color: var(--blue-color);
 }
 
 .footer .icons i {
     font-size: 50px;
 }
 
-.footer .img-footer{
+.footer .img-footer {
     padding: 0px;
 }
+
+
+/* Estilos del main perfil */
+main {
+    margin-top: 80px;
+}
+
+
+main .container {
+    padding-top: 60px;
+}
+
+main .datos {
+    background-color: var(--claro-color);
+    height: 547px;
+    position: absolute;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 40px;
+    margin-left: 15%;
+}
+
+main .datos p {
+    width: 65%;
+    text-align: start;
+    font-size: 20px;
+}
+
+.perfilp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 63px;
+}
+
+.img-perfil {
+    z-index: 1;
+}
+
+h2 {
+    color: var(--claro-color);
+    font-size: 64px;
+}
+
 /* 6. TABLET estilos responsil table*/
 
 /* 7. SMARTPHONE estilos responsil de cel */
