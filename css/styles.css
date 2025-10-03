@@ -1,0 +1,107 @@
+
+
+/* 1. TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 2. ICONOS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+
+
+/* 3. ESTILOS GENERALES */
+h1,
+h2,
+h3
+{
+    font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
+    font-family: "Raleway", sans-serif;
+} 
+
+/* 4. VARIABLES */
+ :root {
+    --primary-color: #e58411;
+    --yellow-color: #f7f7f7;
+    --white-color: #fff;
+    --dark-color: #1F282F;
+    --fs-title1: 80px;
+    --fs-title2: 38px;
+    --fs-title3: 22px;
+    --fs-text: 16px;
+} 
+
+
+
+/* 5. DESKTOP */
+header {
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    background: var(--dark-color);
+    top: 0px;
+
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+#navbarNav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.navbar-nav {
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+body{
+    background: var(--dark-color) !important;
+}
+
+
+#navbarNav li a {
+    color: var(--white-color);
+    font-size: var(--fs-text);
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero{
+    margin-top: 75px;
+}
+
+.hero .info h1{
+    color: var(--white-color);
+}
+
+.hero .info p{
+    color: var(--white-color);
+}
+
+/* 6. TABLET estilos responsil table*/
+
+/* 7. SMARTPHONE estilos responsil de cel */
