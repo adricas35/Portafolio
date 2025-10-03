@@ -215,10 +215,37 @@ main .datos p {
     z-index: 1;
 }
 
-h2 {
+main .datos h2 {
     color: var(--claro-color);
     font-size: 64px;
 }
+
+/* Estilos de habilidades */
+
+main .contenido h3{
+    color: var(--claro-color);
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+main .contenido p{
+    width: 100%;
+    text-align: start;
+    font-size: 16px;
+    color: var(--claro-color);
+    margin-bottom: 40px;
+}
+
+
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+
 
 /* 6. TABLET estilos responsil table*/
 
