@@ -1,8 +1,9 @@
 
 
 /* 1. TIPOGRAFÍAS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monda:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Port+Lligat+Slab&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monda:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monda:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* 2. ICONOS */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
@@ -15,7 +16,8 @@ h1,
 h2,
 h3
 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Rokkitt", serif;
+  
 }
 
 p,
@@ -27,8 +29,12 @@ input,
 select,
 textarea,
 span {
-    font-family: "Raleway", sans-serif;
+    font-family: "Philosopher", sans-serif;
 } 
+
+nav a{
+    font-family: "Port Lligat Slab", serif;
+}
 
 /* 4. VARIABLES */
  :root {
@@ -51,7 +57,6 @@ header {
     height: 75px;
     background: var(--dark-color);
     top: 0px;
-
 }
 
 header nav{
@@ -62,6 +67,7 @@ header nav{
     flex-direction: row;
     align-items: center;
     padding: 0px 40px;
+    font-size: 23px;
 }
 
 #navbarNav{
@@ -91,17 +97,36 @@ body{
 }
 
 .hero{
-    margin-top: 75px;
+    margin-top: 60px;
+}
+
+.hero .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: -webkit-fill-available;
 }
 
 .hero .info h1{
     color: var(--white-color);
+    font-size: 54px;
+    margin: 0px;
 }
 
 .hero .info p{
     color: var(--white-color);
+    margin: 60px 0px 0px 0px;
+    font-size: 20px;
 }
 
+.hero .img {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.hero .img img{
+    width: 90%;
+}
 /* 6. TABLET estilos responsil table*/
 
 /* 7. SMARTPHONE estilos responsil de cel */
