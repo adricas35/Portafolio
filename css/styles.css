@@ -38,10 +38,13 @@ nav a{
 
 /* 4. VARIABLES */
  :root {
-    --primary-color: #e58411;
-    --yellow-color: #f7f7f7;
+    --primary-color: #fffd98;
+    --blue-color: #66d7d1;
     --white-color: #fff;
+    --purple-color: #403d58;
     --dark-color: #1F282F;
+    --orange-color: #fc7753 ;
+    --claro-color: #f2efea;
     --fs-title1: 80px;
     --fs-title2: 38px;
     --fs-title3: 22px;
@@ -62,7 +65,7 @@ header {
 header nav{
     width: 100%;
     height: 100%;
-    color: var(--white-color);
+    color: var(--claro-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,15 +88,19 @@ header nav{
 
 
 body{
-    background: var(--dark-color) !important;
+    background: var(--dark-color)!important;
 }
 
 
 #navbarNav li a {
-    color: var(--white-color);
+    color: var(--claro-color);
     font-size: var(--fs-text);
     margin: 0px;
     padding: 0px;
+}
+
+#navbarNav li a:hover{
+    color:var(--blue-color);
 }
 
 .hero{
@@ -108,13 +115,13 @@ body{
 }
 
 .hero .info h1{
-    color: var(--white-color);
+    color: var(--claro-color);
     font-size: 54px;
     margin: 0px;
 }
 
 .hero .info p{
-    color: var(--white-color);
+    color: var(--claro-color);
     margin: 60px 0px 0px 0px;
     font-size: 20px;
 }
@@ -126,6 +133,46 @@ body{
 }
 .hero .img img{
     width: 90%;
+}
+
+footer{
+    margin: 0px !important;
+    padding: 0px;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.footer{
+    background-image: url("/img/Rectangle.png");
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    background-position: bottom;
+}
+
+.footer .icons{
+    color: var(--claro-color);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 0px 50px 100px;
+    gap: 70px;
+}
+
+.footer .icons a{
+    text-decoration: none;
+    color: var(--claro-color);
+}
+
+.footer .icons a:hover{
+    color:var(--blue-color);
+}
+
+.footer .icons i {
+    font-size: 50px;
+}
+
+.footer .img-footer{
+    padding: 0px;
 }
 /* 6. TABLET estilos responsil table*/
 
