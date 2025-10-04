@@ -346,12 +346,50 @@ main .contenido p {
 }
 
 .cont_estudio_info h5{
-    text-align: 20px;
+    font-size: 20px;
 }
 
 .cont_estudio_info span{
-    text-align: 20px;
+    font-size: 20px;
 }
+
+/* Estilos de hobbies */
+
+.slide-hobbie{
+    border-radius: 30px;
+    background: var(--claro-color);
+    height: 410px;
+    padding: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.hobies_info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    height: 90%;
+}
+
+.slide-hobbie img{
+    border-radius: 30px;
+    width: 323px !important;
+    height: 324px;
+}
+
+.hobies_info h3{
+    font-size: 30px;
+}
+
+.hobies_info p{
+    font-size: 20px;
+}
+
+
 
 
 
