@@ -13,7 +13,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: "Rokkitt", serif;
 
 }
@@ -287,6 +288,72 @@ main .contenido p {
     padding: 30px;
     border-radius: 30px;
 }
+
+/* Estilos de estudio y experiencia */
+.cont_estudio {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--white-color);
+    gap: 21px;
+    margin-bottom: 27px;
+}
+
+.cont_icon_action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_icon_action .icon {
+    width: 43px;
+    height: 43px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_icon_action .linea {
+    height: 79px;
+    border: 2px solid var(--white-color);
+}
+
+.cont_estudio_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cont_estudio_info .fecha {
+    background: var(--blue-color);
+    border-radius: 20px;
+    width: 120px;
+}
+
+.cont_estudio_info h4 {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-weight: bold;
+    text-align: 20px;
+}
+
+.cont_estudio_info h5{
+    text-align: 20px;
+}
+
+.cont_estudio_info span{
+    text-align: 20px;
+}
+
+
 
 
 /* 6. TABLET estilos responsil table*/
