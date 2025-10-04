@@ -12,7 +12,8 @@
 /* 3. ESTILOS GENERALES */
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: "Rokkitt", serif;
 
 }
@@ -146,6 +147,7 @@ footer {
     background-repeat: no-repeat;
     margin-top: 60px;
     background-position: bottom;
+    background-size: 100%;
 }
 
 .footer .icons {
@@ -222,14 +224,14 @@ main .datos h2 {
 
 /* Estilos de habilidades */
 
-main .contenido h3{
+main .contenido h3 {
     color: var(--claro-color);
     text-align: left;
     margin-bottom: 20px;
     font-size: 30px;
 }
 
-main .contenido p{
+main .contenido p {
     width: 100%;
     text-align: start;
     font-size: 16px;
@@ -238,12 +240,46 @@ main .contenido p{
 }
 
 
-
 .habilidades {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 200px;
+}
+
+/* Estilos portafolio */
+.porta h2 {
+    color: var(--claro-color);
+    font-size: 64px;
+}
+
+.tarjeta h4 {
+    margin-top: 15px;
+}
+
+.cont-tarjeta {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.cont-tarjeta .row {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cont-tarjeta .row div {
+    width: 30%;
+    height: -webkit-fill-available;
+}
+
+.tarjeta {
+    background: var(--orange-color);
+    padding: 30px;
+    border-radius: 30px;
 }
 
 
