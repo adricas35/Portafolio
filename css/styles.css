@@ -255,6 +255,12 @@ main .contenido p {
 
 .tarjeta h4 {
     margin-top: 15px;
+    text-align: left;
+}
+
+.tarjeta p {
+    text-align: left;
+    margin-top: 20px;
 }
 
 .cont-tarjeta {
