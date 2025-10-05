@@ -16,7 +16,7 @@ h3,
 h4,
 h5 {
     font-family: "Rokkitt", serif;
-
+    color: var(--white-color);
 }
 
 p,
@@ -246,7 +246,9 @@ main .contenido p {
     flex-direction: row;
     justify-content: center;
     gap: 200px;
+    margin-top: 50px;
 }
+
 
 /* Estilos portafolio */
 .porta h2 {
@@ -257,11 +259,13 @@ main .contenido p {
 .tarjeta h4 {
     margin-top: 15px;
     text-align: left;
+    color: #000000;
 }
 
 .tarjeta p {
     text-align: left;
     margin-top: 20px;
+    color: #000000;
 }
 
 .cont-tarjeta {
@@ -287,6 +291,7 @@ main .contenido p {
     background: var(--orange-color);
     padding: 30px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 /* Estilos de estudio y experiencia */
@@ -345,17 +350,17 @@ main .contenido p {
     text-align: 20px;
 }
 
-.cont_estudio_info h5{
+.cont_estudio_info h5 {
     font-size: 20px;
 }
 
-.cont_estudio_info span{
+.cont_estudio_info span {
     font-size: 20px;
 }
 
 /* Estilos de hobbies */
 
-.slide-hobbie{
+.slide-hobbie {
     border-radius: 30px;
     background: var(--claro-color);
     height: 410px;
@@ -375,25 +380,125 @@ main .contenido p {
     height: 90%;
 }
 
-.slide-hobbie img{
+.slide-hobbie img {
     border-radius: 30px;
     width: 323px !important;
     height: 324px;
 }
 
-.hobies_info h3{
+.hobies_info h3 {
+    font-size: 30px;
+    color: #000000;
+}
+
+.hobies_info p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.cont-porcentaje {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+circle {
+    fill: transparent;
+    stroke-width: 20;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke: #FFFFFF;
+    stroke-dasharray: 100 100;
+}
+
+circle:nth-child(2) {
+    stroke: var(--blue-color);
+    stroke-linecap: round;
+}
+
+
+#porcentaje-js circle:nth-child(2) {
+    stroke-dasharray: 50 100;
+}
+
+#porcentaje-html circle:nth-child(2) {
+    stroke-dasharray: 85 100;
+}
+
+#porcentaje-php circle:nth-child(2) {
+    stroke-dasharray: 30 100;
+}
+
+#porcentaje-css circle:nth-child(2) {
+    stroke-dasharray: 70 100;
+}
+
+
+.porcentaje {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.porcentaje span {
+    position: absolute;
+    top: 26%;
+    left: 43%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.porcentaje h5 {
     font-size: 30px;
 }
 
-.hobies_info p{
-    font-size: 20px;
+
+.title {
+    font-size: 64px;
 }
 
+#carouselExample button span {
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-size: 50px;
+}
 
+#carouselExample {
+    margin-top: 50px;
+}
 
-
+#menu {
+    display: none;
+}
 
 
 /* 6. TABLET estilos responsil table*/
 
 /* 7. SMARTPHONE estilos responsil de cel */
+@media screen and (min-width:320px) and (max-width:767px) {
+    header nav {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    #navbarNav {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        cursor: pointer;
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+}
