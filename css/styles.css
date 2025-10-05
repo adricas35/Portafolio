@@ -149,6 +149,8 @@ footer {
     margin-top: 60px;
     background-position: bottom;
     background-size: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .footer .icons {
@@ -473,7 +475,7 @@ circle:nth-child(2) {
     margin-top: 50px;
 }
 
-#menu {
+.menu {
     display: none;
 }
 
@@ -482,23 +484,121 @@ circle:nth-child(2) {
 
 /* 7. SMARTPHONE estilos responsil de cel */
 @media screen and (min-width:320px) and (max-width:767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    header {
+        left: 0px;
+    }
+
     header nav {
         display: flex;
         flex-direction: row;
-        width: 90%;
         justify-content: space-between;
+    }
+
+    #menuClose {
+        display: none;
     }
 
     #navbarNav {
         display: none;
+        position: fixed;
+        background-color: var(--blue-color);
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        top: 80px;
+        padding: 10px;
+        border-radius: 10px;
     }
 
-    #menu {
+    #navbarNav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbarNav ul li {
+        height: 52px;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+    }
+
+    #navbarNav ul li:hover {
+        background-color: #38A3BE;
+    }
+
+    .menu {
         display: flex;
         cursor: pointer;
-        /* flex-direction: column;
+        width: 20px;
+        height: 20px;
+        font-size: 0px;
+    }
+
+    .hero {
+        padding: 30px 26px 0px 26px;
+    }
+
+    .hero .img {
+        order: 1;
         justify-content: center;
-        align-items: center; */
+    }
+
+    .hero .img img {
+        width: 200px;
+    }
+
+    .hero .info {
+        order: 2;
+    }
+
+    .hero .container .row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer, .footer {
+        height: 143px;
+        margin-top: 0px;
+    }
+
+    .footer .icons {
+        gap: 10px;
+        padding: 0px 0px 10px 10px;
+    }
+
+    .footer .icons a i {
+        font-size: 30px;
+    }
+
+    .footer .icons p {
+        display: none;
+    }
+
+    .footer .img-footer img {
+        width: 107px;
     }
 
 }
