@@ -490,7 +490,8 @@ circle:nth-child(2) {
         gap: 50px;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 30px !important;
         text-align: center;
     }
@@ -532,7 +533,7 @@ circle:nth-child(2) {
         height: 52px;
         display: flex;
         flex-direction: column;
-         justify-content: center;
+        justify-content: center;
         align-items: center;
         width: 100%;
         gap: 5px;
@@ -579,7 +580,8 @@ circle:nth-child(2) {
         align-items: center;
     }
 
-    footer, .footer {
+    footer,
+    .footer {
         height: 143px;
         margin-top: 0px;
     }
@@ -628,5 +630,28 @@ circle:nth-child(2) {
         width: 186px;
     }
 
+
+    /* habilidades  */
+    .habilidades {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .habilidades .img-perfil img {
+        width: 169px;
+    }
+
+    .habilidades .contenido {
+        margin-top: 0px;
+        padding: 0px 20px;
+    }
+
+    .habilidades .contenido .row {
+        gap: 35px;
+    }
+
+    .habilidades .contenido p {
+        margin-bottom: 0px;
+    }
 
 }
