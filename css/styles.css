@@ -270,6 +270,10 @@ main .contenido p {
     color: #000000;
 }
 
+.tarjeta img {
+    width: 100%;
+}
+
 .cont-tarjeta {
     display: flex;
     gap: 30px;
@@ -479,8 +483,72 @@ circle:nth-child(2) {
     display: none;
 }
 
+.carousel-portafolio {
+    display: none;
+}
+
+.cont-hobbies {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card-hobbie {
+    background: #FFF8F8;
+    border-radius: 30px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 /* 6. TABLET estilos responsil table*/
+@media screen and (min-width:768px) and (max-width:1080px) {
+    .hero {
+        margin-top: 150px;
+    }
+
+    .footer .icons p {
+        display: none;
+    }
+
+    /* Perfil profesional*/
+
+    .perfilp {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 80px;
+    }
+
+    .perfilp .datos {
+        position: static;
+        width: 100%;
+        padding: 0px;
+        background-color: transparent;
+        color: var(--white-color);
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: fit-content;
+    }
+
+    .perfilp .datos p {
+        width: 90%;
+    }
+
+    /** Habilidades*/
+    .habilidades {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cont-porcentaje {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 /* 7. SMARTPHONE estilos responsil de cel */
 @media screen and (min-width:320px) and (max-width:767px) {
@@ -654,4 +722,32 @@ circle:nth-child(2) {
         margin-bottom: 0px;
     }
 
+    /* Portafolio */
+
+    .cont-tarjeta {
+        display: none;
+    }
+
+    .carousel-portafolio {
+        display: block;
+    }
+
+    .tarjeta {
+        height: 450px;
+    }
+
+    /* Estudio y esperiencia */
+
+    .cont-porcentaje {
+        display: none;
+    }
+
+    /* Hobbies */
+    .carousel-hobbies {
+        display: none;
+    }
+
+    .cont-hobbies {
+        display: flex;
+    }
 }
