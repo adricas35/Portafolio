@@ -1,3 +1,6 @@
+AOS.init();
+
+
 document.getElementById('rumbo').addEventListener('click', function() {
     window.open('https://adricas35.github.io/Rumbo-practica--html-css/', '_blank');
 });

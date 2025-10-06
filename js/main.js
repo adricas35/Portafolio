@@ -1,3 +1,5 @@
+AOS.init();
+
 
 document.getElementById('menuOpen').addEventListener('click', function() {
     document.getElementById('menuOpen').style.display = "none";
@@ -9,4 +11,6 @@ document.getElementById('menuClose').addEventListener('click', function() {
     document.getElementById('menuClose').style.display = "none";
     document.getElementById('menuOpen').style.display = "flex";    
     document.getElementById('navbarNav').style.display = "none";
+
 });
+
