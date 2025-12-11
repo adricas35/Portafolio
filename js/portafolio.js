@@ -1,4 +1,4 @@
-AOS.init();
+
 
 
 document.getElementById('rumbo').addEventListener('click', function() {
