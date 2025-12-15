@@ -20,7 +20,7 @@ formulario.addEventListener('submit', (event) => {
     const encodedMessage = encodeURIComponent(mensaje);
 
     // 4. Definir el número de teléfono de destino (ejemplo: 573181234567 para Colombia)
-    const phoneNumber = '3102893100'; 
+    const phoneNumber = '+573102893100'; 
 
     // 5. Construir la URL de WhatsApp "clic para chatear"
     const whatsappURL = `http://wa.me/${phoneNumber}?text=${encodedMessage}`;

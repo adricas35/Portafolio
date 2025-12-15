@@ -1,38 +1,59 @@
 
+document.addEventListener('click', function (event) {
+
+    const parentItem = event.target.parentElement;
+    let idElement = '';
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        if (parentItem.classList.contains('tarjeta')) {
+            idElement = parentItem.id;
+        }
+        if (parentItem.classList.contains('carousel-item')) {
+            const primerHijo = parentItem.firstElementChild;
+            idElement = primerHijo.id;
+        }
 
 
-document.getElementById('rumbo').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Rumbo-practica--html-css/', '_blank');
-});
+    } else{
+        if (event.target.tagName === 'BUTTON') {
+            idElement = event.target.id;
+        }
+    }
 
-document.getElementById('vehiculos_dinamicos').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Protecto_vehiculos_dinamicos/', '_blank');
-});
 
-document.getElementById('tematicas').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Taller-practico-HTML-mas-CSS-tematicas/', '_blank');
-});
+    switch (idElement) {
+        case 'rumbo':
+            window.open('https://adricas35.github.io/Rumbo-practica--html-css/', '_blank');
+            break;
+        case
+            'vehiculos_dinamicos':
+            window.open('https://adricas35.github.io/Protecto_vehiculos_dinamicos/', '_blank');
+            break;
+        case
+            'tematicas':
+            window.open('https://adricas35.github.io/Taller-practico-HTML-mas-CSS-tematicas/', '_blank');
+            break;
+        case 'nivelacion':
+            window.open('https://adricas35.github.io/Algoritmos-nivelaci-n-JS/', '_blank');
+            break;
+        case
+            'algoritmos':
+            window.open('https://adricas35.github.io/Algotritmos-practica-js/', '_blank');
+            break;
+        case 'gym':
+            window.open('https://adricas35.github.io/WEBSITE-CON-BOOTSTRAP-GYM/', '_blank');
+            break;
+        case 'algoritmos_itermedio':
+            window.open('https://adricas35.github.io/Algoritmos-intermedios_avanzado/', '_blank');
+            break;
+        case 'web_resposive':
+            window.open('https://adricas35.github.io/Web-Site-Responsive/', '_blank');
+            break;
+        case 'web_localStorage':
+            window.open('https://adricas35.github.io/Proyecto-LocalStorage/', '_blank');
+            break;
+        default:
+            break;
+    }
 
-document.getElementById('nivelacion').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Algoritmos-nivelaci-n-JS/', '_blank');
-});
 
-document.getElementById('algoritmos').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Algotritmos-practica-js/', '_blank');
-});
-
-document.getElementById('gym').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/WEBSITE-CON-BOOTSTRAP-GYM/', '_blank');
-});
-
-document.getElementById('algoritmos_itermedio').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Algoritmos-intermedios_avanzado/', '_blank');
-});
-
-document.getElementById('web_resposive').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Web-Site-Responsive/', '_blank');
-});
-
-document.getElementById('web_localStorage').addEventListener('click', function() {
-    window.open('https://adricas35.github.io/Proyecto-LocalStorage/', '_blank');
 });
